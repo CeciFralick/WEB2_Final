@@ -299,6 +299,14 @@
       "oAP" : "\/deploy\/workspace.code-workspace",
       "oF" : 0
     },
+    "\/dev\/content\/bottomlist.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/bottomlist.html",
+      "oF" : 0
+    },
     "\/dev\/content\/brainnav.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -313,14 +321,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/diduknow.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/natalia.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/natalia.html",
       "oF" : 0
     },
     "\/dev\/content\/natalia.kit" : {
@@ -353,14 +353,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/section-3.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/section-4.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/section-4.html",
       "oF" : 0
     },
     "\/dev\/content\/section-4.kit" : {
@@ -573,6 +565,34 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_bottomlist.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_bottomlist.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_diduknow.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_diduknow.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
