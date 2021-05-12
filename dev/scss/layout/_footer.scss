@@ -1,0 +1,94 @@
+/* =============
+    Footer
+============= */
+footer {
+
+    #smlogos {
+        ul {
+            li{
+                display: inline-block; 
+                font-size: 32px;
+            }
+        }
+    }
+    background-color: #103c49;
+
+h5 {
+    font-family: 'karla', sans-serif;
+}
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+
+    >div {
+        grid-area: footer;
+        color: rgb(255, 180, 151);
+
+        #locations {
+            grid-area: "footer";
+        }
+
+        #email {
+            grid-area: "footer";
+        }
+
+        @include md {
+            display: grid;
+            background-color: #103c49;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 250px auto 250px;
+            grid-template-areas: "locations email";
+            gap: 16px;
+
+            #locations {
+                grid-area: #103c49;
+                grid-area: "locations";
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            #email {
+                background-color: #103c49;
+                grid-area: "email";
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+        }
+
+        @include lg {
+            display: grid;
+            background-color: #103c49;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 250px auto 250px;
+            grid-template-areas: "locations email";
+            gap: 16px;
+
+            #locations {
+                grid-area: #103c49;
+                grid-area: "locations";
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            #email {
+                background-color: #103c49;
+                grid-area: "email";
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+        }
+
+        #h1footer {
+            padding-top: 20px;
+    
+            @include md {
+                text-align: left;
+            }
+            @include lg {
+                text-align: left;   
+            }
+        }
+
+    }
+}

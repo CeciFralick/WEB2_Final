@@ -1,0 +1,95 @@
+/* =============
+    Base
+============= */
+base {
+    display:grid
+    grid-template-columns;
+}
+
+ul { 
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.section-5 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1
+    grid-column;
+    display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+#footerhr {
+  color: #f18973;
+  justify-content: left;
+  align-items: left;
+  width: 500px
+}
+
+#section-1 {
+  background-color: #f18973;
+}
+
+h1 {
+font-family: 'Karla', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+  .section-1 {
+    grid-area: auto;
+  }
+
+  p {
+    font-family: 'Karla', sans-serif;
+    line-height: 22px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+
+  .left {
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    width: 15%;
+  }
+
+  button {
+    background-color: #17a8b3;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 16px; 
+    li {
+      list-style: none;
+    }
+  }
+
+  footer {
+    background-color: #103c49;
+  }
