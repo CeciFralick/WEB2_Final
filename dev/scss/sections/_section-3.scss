@@ -7,19 +7,30 @@
     margin: 20px;
     padding: 20px;
     display: grid;
-
     font-size: 13px;
-    padding: 10px;
 
-    @include md {
-        font-size: 15px;
-        margin: 40px;
-        padding: 40px;
+
+    #boxes {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        #box1 {
+            outline: auto;
+            padding: 10px;
+            margin-right: 10px;
+            outline-color: $mint;
+            text-align: center;
+        }
+        #box2 {
+            outline: auto;
+            padding: 10px;
+            margin-left: 10px;
+            outline-color: $mint;
+            text-align: center;
+        }
     }
 
-    @include lg {
+    @include md {
         font-size: 17px;
-        margin: 40px;
-        padding: 40px;
     }
 }

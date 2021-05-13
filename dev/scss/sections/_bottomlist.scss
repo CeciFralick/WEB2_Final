@@ -5,9 +5,16 @@
 #list {
     font-family: 'Karla', sans-serif;
     font-weight: 100;
+    font-size: 13px;
     background-color: $evergreen;
     color: $darkmidnight;
     padding: 10px;
     line-height: 50px;
     text-align: center;
+    @include md {
+font-size: 17px;
+    }
+    @include lg {
+        font-size: 19px;
+            }
 }

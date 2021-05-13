@@ -2,6 +2,7 @@
     Footer
 ============= */
 footer {
+    color: $mustard;
 
     #smlogos {
         ul {
@@ -23,7 +24,7 @@ h5 {
 
     >div {
         grid-area: footer;
-        color: rgb(255, 180, 151);
+        color: $mustard;
 
         #locations {
             grid-area: "footer";

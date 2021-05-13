@@ -8,6 +8,10 @@ header {
     background-color: #ee7e51;
     color: $darkmidnight;
     padding: 10px;
+    font-size: 13px;
+    @include md{
+      font-size: 15px;
+    }
   }
 
   #nav {

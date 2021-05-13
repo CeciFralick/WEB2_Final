@@ -372,13 +372,6 @@ ul li {
   display: none;
 }
 
-#footerhr {
-  color: #f18973;
-  justify-content: left;
-  align-items: left;
-  width: 500px;
-}
-
 h1 {
   font-family: "Karla", sans-serif;
   font-family: "Montserrat", sans-serif;
@@ -424,10 +417,6 @@ ul {
 }
 ul li {
   list-style: none;
-}
-
-footer {
-  background-color: #103c49;
 }
 
 /* =============
@@ -487,6 +476,12 @@ header #top {
   background-color: #ee7e51;
   color: #242741;
   padding: 10px;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  header #top {
+    font-size: 15px;
+  }
 }
 header #nav {
   background-color: #242741;
@@ -534,6 +529,7 @@ header > div #nav-container {
     Footer
 ============= */
 footer {
+  color: #DDAC71;
   background-color: #242741;
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -548,7 +544,7 @@ footer h5 {
 }
 footer > div {
   grid-area: footer;
-  color: #ffb497;
+  color: #DDAC71;
 }
 footer > div #locations {
   grid-area: "footer";
@@ -758,20 +754,29 @@ footer > div #h1footer {
   padding: 20px;
   display: grid;
   font-size: 13px;
+}
+#section-3 #boxes {
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+#section-3 #boxes #box1 {
+  outline: auto;
+  padding: 10px;
+  margin-right: 10px;
+  outline-color: #81B29B;
+  text-align: center;
+}
+#section-3 #boxes #box2 {
+  outline: auto;
+  padding: 10px;
+  margin-left: 10px;
+  outline-color: #81B29B;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #section-3 {
-    font-size: 15px;
-    margin: 40px;
-    padding: 40px;
-  }
-}
-@media (min-width: 1024px) {
-  #section-3 {
     font-size: 17px;
-    margin: 40px;
-    padding: 40px;
   }
 }
 
@@ -780,12 +785,16 @@ footer > div #h1footer {
 ============= */
 #brain {
   background-color: #81B29B;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 4;
 }
 #brain #box {
   background-color: #81B29B;
   color: #242741;
   padding-left: 20px;
   text-align: center;
+  grid-column: 4;
 }
 
 /* =============
@@ -839,9 +848,20 @@ footer > div #h1footer {
 #list {
   font-family: "Karla", sans-serif;
   font-weight: 100;
+  font-size: 13px;
   background-color: #6CA087;
   color: #242741;
   padding: 10px;
   line-height: 50px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #list {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1024px) {
+  #list {
+    font-size: 19px;
+  }
 }
