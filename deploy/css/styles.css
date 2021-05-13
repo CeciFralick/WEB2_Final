@@ -356,6 +356,10 @@ base {
   display: grid grid-template-columns;
 }
 
+body {
+  background-color: #3d4058;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -368,26 +372,11 @@ ul li {
   display: none;
 }
 
-.section-5 {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 1 grid-column;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  font-size: 2em;
-  color: #ffeead;
-}
-
 #footerhr {
   color: #f18973;
   justify-content: left;
   align-items: left;
   width: 500px;
-}
-
-#section-1 {
-  background-color: #f18973;
 }
 
 h1 {
@@ -490,14 +479,22 @@ textarea {
     Header
 ============= */
 header {
-  background-color: #ee7e51;
-  color: #28307a;
   display: grid;
   grid-gap: 3px;
   padding-bottom: 20px;
 }
+header #top {
+  background-color: #ee7e51;
+  color: #242741;
+  padding: 10px;
+}
+header #nav {
+  background-color: #242741;
+  color: #DDAC71;
+}
 header > div {
   display: grid;
+  color: #DDAC71;
   grid-template-areas: "burger survival" "nav nav";
   grid-template-columns: 20% auto;
 }
@@ -506,22 +503,6 @@ header > div {
     grid-template-areas: "nav survival";
     grid-template-columns: 20% auto;
   }
-}
-header > div #button-container {
-  grid-area: survival;
-  padding: 10px;
-  text-align: right;
-}
-header > div #button-container button {
-  background-color: teal;
-  border-radius: 23px;
-  color: black;
-  display: inline-block;
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 10px 20px;
-  border: none;
-  transition: 0.25s;
 }
 header > div #burger-container {
   align-items: center;
@@ -539,7 +520,6 @@ header > div #burger-container i {
   font-size: 1.875rem;
 }
 header > div #nav-container {
-  background-color: charcoal;
   display: none;
   grid-area: nav;
   padding: 20px 10px 10px;
@@ -554,7 +534,7 @@ header > div #nav-container {
     Footer
 ============= */
 footer {
-  background-color: #103c49;
+  background-color: #242741;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -579,7 +559,6 @@ footer > div #email {
 @media (min-width: 768px) {
   footer > div {
     display: grid;
-    background-color: #103c49;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 250px auto 250px;
     grid-template-areas: "locations email";
@@ -592,7 +571,6 @@ footer > div #email {
     grid-row: 1/2;
   }
   footer > div #email {
-    background-color: #103c49;
     grid-area: "email";
     grid-column: 2/3;
     grid-row: 1/2;
@@ -601,20 +579,17 @@ footer > div #email {
 @media (min-width: 1024px) {
   footer > div {
     display: grid;
-    background-color: #103c49;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 250px auto 250px;
     grid-template-areas: "locations email";
     gap: 16px;
   }
   footer > div #locations {
-    grid-area: #103c49;
     grid-area: "locations";
     grid-column: 1/2;
     grid-row: 1/2;
   }
   footer > div #email {
-    background-color: #103c49;
     grid-area: "email";
     grid-column: 2/3;
     grid-row: 1/2;
@@ -637,157 +612,50 @@ footer > div #h1footer {
 /* =============
     Section-1
 ============= */
-#section-1 #links {
-  color: white;
-  margin: 10px;
+#section-1 {
+  color: #F2CC8F;
+  margin: 20px;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr, auto);
-  grid-template-rows: 120px;
-  grid-template-areas: "box1 . box2";
-}
-@media (min-width: 768px) {
-  #section-1 #links {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 150px;
-    grid-template-areas: "box1 . box2";
-  }
-}
-#section-1 #links #link1 {
-  background-color: #ffb497;
-  color: white;
-  grid-area: #ffb497;
-  text-align: center;
   font-size: 13px;
-  padding: 30px;
   padding: 10px;
 }
 @media (min-width: 768px) {
-  #section-1 #links #link1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
+  #section-1 {
     font-size: 15px;
+    margin: 40px;
+    padding: 40px;
   }
 }
 @media (min-width: 1024px) {
-  #section-1 #links #link1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
+  #section-1 {
     font-size: 17px;
+    margin: 40px;
+    padding: 40px;
   }
-}
-#section-1 #links #link2 {
-  font-size: 13px;
-  color: white;
-  padding: 10px;
-}
-@media (min-width: 768px) {
-  #section-1 #links #link2 {
-    grid-column: 3/6;
-    grid-row: 1/2;
-    font-size: 15px;
-  }
-}
-@media (min-width: 1024px) {
-  #section-1 #links #link2 {
-    grid-column: 3/6;
-    grid-row: 1/2;
-    font-size: 17px;
-  }
-}
-#section-1 #links #hero-image {
-  max-width: auto;
 }
 
 /* =============
     Natalia
 ============= */
 #natalia {
-  background-color: palegreen;
+  background-color: #81B29B;
   padding: 20px;
 }
 
 /* =============
     Skills
 ============= */
-#section-2 {
+#skills {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: #DDAC71;
+  color: #242741;
 }
-@media (min-width: 576px) {
-  #section-2 #sec2 {
-    display: grid;
-    padding: 5px;
-    grid-gap: 3px;
-    font-size: 11px;
-    grid-template-columns: repeat(1, 2fr);
-    grid-template-rows: auto auto;
-    grid-template-areas: "f" "f";
-  }
-}
-@media (min-width: 768px) {
-  #section-2 #sec2 {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 105px 100px;
-    grid-template-areas: "second second";
-    font-size: 13px;
-  }
-}
-@media (min-width: 1024px) {
-  #section-2 #sec2 {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 100px 100px;
-    grid-template-areas: "second second";
-    font-size: 17px;
-  }
-}
-@media (min-width: 576px) {
-  #section-2 #sec2 #first {
-    background-color: teal;
-    color: white;
-    padding: 10px;
-    grid-area: #006666;
-    text-align: left;
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-}
-@media (min-width: 768px) {
-  #section-2 #sec2 #first {
-    grid-column: 1/3;
-    grid-row: 1/-1;
-  }
-}
-@media (min-width: 1024px) {
-  #section-2 #sec2 #first {
-    grid-column: 1/3;
-    grid-row: 1/-1;
-  }
-}
-@media (min-width: 576px) {
-  #section-2 #sec2 #second {
-    padding-top: 10px;
-    background-color: teal;
-    color: white;
-    padding: 1px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-}
-@media (min-width: 768px) {
-  #section-2 #sec2 #second {
-    grid-column: 3/-1;
-    grid-row: 1/-1;
-  }
-}
-@media (min-width: 1024px) {
-  #section-2 #sec2 #second {
-    grid-column: 3/-1;
-    grid-row: 1/-1;
-  }
+#skills #bullets {
+  text-align: left;
 }
 
 /* =============
@@ -795,243 +663,185 @@ footer > div #h1footer {
 ============= */
 #section-2 {
   font-family: "Montserrat", sans-serif;
+  color: #F2CC8F;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  font-size: 13px;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  #section-2 {
+    font-size: 15px;
+    margin: 40px;
+    padding: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #section-2 {
+    font-size: 17px;
+    margin: 40px;
+    padding: 40px;
+  }
 }
 
 /* =============
     Tutoring
 ============= */
-#sec3 {
-  display: none;
+#tutoring {
+  padding: 20px;
+  background-color: #81B29B;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
 }
-
-#section-4 #sec4 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+#tutoring #Theader {
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 1/1;
+  padding: 10px;
 }
-#section-4 #extra {
-  display: none;
+#tutoring #eng {
+  background-color: #242741;
+  color: #F2CC8F;
+  display: grid;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 30px;
+}
+#tutoring #eng #englogo {
+  color: #DF7A5F;
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+#tutoring #math {
+  background-color: #3d4058;
+  color: #F2CC8F;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 40px;
+}
+#tutoring #math #mathlogo {
+  color: #DF7A5F;
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+#tutoring #stud {
+  background-color: #242741;
+  color: #F2CC8F;
+  text-align: center;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  padding: 30px;
+}
+#tutoring #stud #studlogo {
+  color: #DF7A5F;
+  font-size: 70px;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #section-4 {
+  #tutoring {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-  }
-  #section-4 #sec4 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding: 10px;
-  }
-  #section-4 #extra {
-    display: none;
-  }
-  #section-4 #sec3 {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding: 16px;
-  }
-}
-@media (min-width: 1024px) {
-  #section-4 {
-    display: inline-block;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px auto 50px;
-  }
-  #section-4 #sec4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  #section-4 #extra {
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 1/3;
-  }
-  #section-4 #sec3 {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1/2;
   }
 }
 
 /* =============
     Section-3
 ============= */
-#section-5 #boxes {
+#section-3 {
+  color: #F2CC8F;
+  margin: 20px;
+  padding: 20px;
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section-5 .";
-}
-@media (min-width: 576px) {
-  #section-5 #boxes {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 400px 370px 370px 370px 400px;
-    grid-template-areas: "box1" "box2" "box3" "box4" "box5";
-  }
+  font-size: 13px;
+  padding: 10px;
 }
 @media (min-width: 768px) {
-  #section-5 #boxes {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px 370px 420px;
-    grid-template-areas: "box1 box2" "box3 box4" ". box5 .";
+  #section-3 {
+    font-size: 15px;
+    margin: 40px;
+    padding: 40px;
   }
 }
 @media (min-width: 1024px) {
-  #section-5 #boxes {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 430px 430px;
-    grid-template-areas: "box1 box2 box3" "box4 box5";
+  #section-3 {
+    font-size: 17px;
+    margin: 40px;
+    padding: 40px;
   }
 }
-#section-5 #boxes #box1 {
-  background-color: #ffb497;
-  color: black;
-  grid-area: box1;
-  grid-area: #ffb497;
+
+/* =============
+    brainnav
+============= */
+#brain {
+  background-color: #81B29B;
+}
+#brain #box {
+  background-color: #81B29B;
+  color: #242741;
+  padding-left: 20px;
   text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
+}
+
+/* =============
+    diduknow
+============= */
+#duk {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  background-color: #DDAC71;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #242741;
+}
+#duk #question {
+  grid-column: 1/1;
+  color: #F2CC8F;
+  font-size: 70px;
+  text-align: left;
+}
+
+/* =============
+    Section-4
+============= */
+#section-4 {
+  color: #F2CC8F;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  font-size: 13px;
+  padding: 10px;
 }
 @media (min-width: 768px) {
-  #section-5 #boxes #box1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row: 1/2;
+  #section-4 {
+    font-size: 15px;
+    margin: 40px;
+    padding: 40px;
   }
 }
 @media (min-width: 1024px) {
-  #section-5 #boxes #box1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
+  #section-4 {
+    font-size: 17px;
+    margin: 40px;
+    padding: 40px;
   }
 }
-#section-5 #boxes #box2 {
-  background-color: #ffb497;
-  color: black;
-  grid-area: box2;
-  grid-area: #ffb497;
+
+/* =============
+    bottomlist
+============= */
+#list {
+  font-family: "Karla", sans-serif;
+  font-weight: 100;
+  background-color: #6CA087;
+  color: #242741;
+  padding: 10px;
+  line-height: 50px;
   text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
-  padding-right: 20px;
-}
-@media (min-width: 768px) {
-  #section-5 #boxes #box2 {
-    grid-column: 3/6;
-    grid-row: 1/2;
-  }
-}
-@media (min-width: 1024px) {
-  #section-5 #boxes #box2 {
-    grid-column: 4/6;
-    grid-row: 1/2;
-  }
-}
-#section-5 #boxes #box3 {
-  background-color: #ffb497;
-  color: black;
-  grid-area: box3;
-  grid-area: #ffb497;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  #section-5 #boxes #box3 {
-    grid-column: 1/1;
-    grid-row: 2/3;
-  }
-}
-@media (min-width: 1024px) {
-  #section-5 #boxes #box3 {
-    grid-column: 7/9;
-    grid-row: 1/2;
-  }
-}
-#section-5 #boxes #box4 {
-  background-color: #ffb497;
-  color: black;
-  grid-area: box4;
-  grid-area: #ffb497;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  #section-5 #boxes #box4 {
-    grid-column: 3/3;
-    grid-row: 2/3;
-    border: 1px solid #000;
-  }
-}
-@media (min-width: 1024px) {
-  #section-5 #boxes #box4 {
-    grid-column: 2/4;
-    grid-row: 2/3;
-  }
-}
-#section-5 #boxes #box5 {
-  background-color: #ffb497;
-  color: black;
-  grid-area: box5;
-  grid-area: #ffb497;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  #section-5 #boxes #box5 {
-    grid-column: 2/2;
-    grid-row: 3/4;
-  }
-}
-@media (min-width: 1024px) {
-  #section-5 #boxes #box5 {
-    grid-column: 6/8;
-    grid-row: 2/3;
-  }
-}
-#section-5 #boxes > div {
-  grid-area: section-5;
-}
-#section-5 #boxes img {
-  max-width: 100%;
-}
-#section-5 #boxes #g1 {
-  text-align: center;
-}
-#section-5 #boxes #g2 {
-  text-align: center;
-}
-#section-5 #boxes #g3 {
-  text-align: center;
-}
-#section-5 #boxes #g4 {
-  text-align: center;
-}
-#section-5 #boxes #g5 {
-  text-align: center;
-}
-#section-5 #g1 {
-  grid-area: g1;
-}
-#section-5 #g2 {
-  grid-area: g2;
-}
-#section-5 #g3 {
-  grid-area: g3;
-}
-#section-5 #g4 {
-  grid-area: g4;
-}
-#section-5 #g5 {
-  grid-area: g5;
 }

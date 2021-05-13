@@ -4,14 +4,24 @@
 
 
 header {
-  background-color: #ee7e51;
-  color: #28307a;
+  #top {
+    background-color: #ee7e51;
+    color: $darkmidnight;
+    padding: 10px;
+  }
+
+  #nav {
+    background-color: #242741;
+    color: $mustard;
+  }
+
   display: grid;
   grid-gap: 3px;
   padding-bottom: 20px;
 
   >div {
     display: grid;
+    color: $mustard;
     grid-template-areas:
       "burger survival"
       "nav nav";
@@ -22,25 +32,6 @@ header {
       grid-template-columns: 20% auto;
     }
 
-    #button-container {
-      grid-area: survival;
-      padding: 10px;
-      text-align: right;
-
-      button {
-        background-color: teal;
-        border-radius: 23px;
-        color: black;
-        display: inline-block;
-        font-size: rem-calc(18);
-        font-weight: 700;
-        padding: 10px 20px;
-        border: none;
-        transition: 0.25s;
-      }
-
-
-    }
 
     #burger-container {
       align-items: center;
@@ -59,7 +50,6 @@ header {
     }
 
     #nav-container {
-      background-color: charcoal;
       display: none;
       grid-area: nav;
       padding: 20px 10px 10px;

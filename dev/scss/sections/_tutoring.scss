@@ -1,66 +1,69 @@
 /* =============
     Tutoring
 ============= */
-#sec3 {
-    display: none;
-}
 
-#section-4 {
-    #sec4 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
+#tutoring {
+    padding: 20px;
+    #Theader {
+        text-align: center;
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        padding: 10px;
     }
 
-    #extra {
-        display: none;
+    background-color: $mint;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    #eng {    
+        #englogo{
+            color: $bldorange;
+            font-size: 70px;
+            padding-bottom: 20px;
+        }
+        background-color: $darkmidnight;   
+        color: $lightmustard;    
+        display: grid;
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 30px;
+    }
+
+    #math {     
+        #mathlogo{
+            color: $bldorange;
+            font-size: 70px;
+            padding-bottom: 20px;
+        }
+        background-color: $midnight;  
+        color: $lightmustard;  
+        text-align: center;       
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding: 40px;
+    }
+
+    #stud {
+        #studlogo{
+            color: $bldorange;
+            font-size: 70px;
+            padding-bottom: 20px;
+        }
+        background-color: $darkmidnight;  
+        color: $lightmustard;  
+        text-align: center;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        padding: 30px;
     }
 
     @include md {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-
-        #sec4 {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            padding: 10px;
-        }
-
-        #extra {
-            display: none;
-        }
-
-        #sec3 {
-            display: grid;
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            padding: 16px;
-        }
     }
 
-    @include lg {
-        display: inline-block;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 200px auto 50px;
 
-        #sec4 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        #extra {
-            display: grid;
-            grid-column: 3 / 4;
-            grid-row: 1 / 3;
-        }
-
-        #sec3 {
-            display: grid;
-            grid-column: 1 / 2;
-            grid-row: 1 / 2
-        }
-    }
 }

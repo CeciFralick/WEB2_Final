@@ -1,0 +1,25 @@
+/* =============
+    Section-4
+============= */
+
+#section-4 {
+    color: $lightmustard;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+
+    font-size: 13px;
+    padding: 10px;
+
+    @include md {
+        font-size: 15px;
+        margin: 40px;
+        padding: 40px;
+    }
+
+    @include lg {
+        font-size: 17px;
+        margin: 40px;
+        padding: 40px;
+    }
+}

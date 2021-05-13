@@ -1,0 +1,22 @@
+/* =============
+    diduknow
+============= */
+
+#duk {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    background-color: $mustard;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: $darkmidnight;
+    #question {
+        grid-column: 1 / 1;
+        color: $lightmustard;
+        font-size: 70px;
+        text-align: left;
+
+    }
+
+
+}
