@@ -3,16 +3,22 @@
 ============= */
 
 #brain {
-background-color: $mint;
-padding: 15px;
-display: grid;
-grid-template-columns: 4;
-
-#box{
     background-color: $mint;
-    color: $darkmidnight;
-    padding-left: 20px;
-    text-align: center;
-    grid-column: 4;
-}
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 4;
+
+    #brainimg{
+        grid-area: auto;
+        width: auto;
+        align-content: center; 
+    }
+
+    #box {
+        background-color: $mint;
+        color: $darkmidnight;
+        padding-left: 20px;
+        text-align: center;
+        grid-column: 4;
+    }
 }

@@ -789,6 +789,11 @@ footer > div #h1footer {
   display: grid;
   grid-template-columns: 4;
 }
+#brain #brainimg {
+  grid-area: auto;
+  width: auto;
+  align-content: center;
+}
 #brain #box {
   background-color: #81B29B;
   color: #242741;
