@@ -886,12 +886,17 @@ footer > div #op6 #op6 {
   text-align: center;
   color: #242741;
 }
+#skills #head {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #skills #bullets {
   display: flex;
   text-align: left;
   justify-content: center;
   grid-column: 1/1;
   display: flex;
+  font-size: 20px;
 }
 #skills #exclamation {
   display: flex;
@@ -914,6 +919,27 @@ footer > div #op6 #op6 {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+@media (min-width: 768px) {
+  #skills {
+    font-size: 17px;
+  }
+  #skills #head {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #skills {
+    font-size: 20px;
+  }
+  #skills #head {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #skills #bullets {
+    font-size: 25px;
+  }
 }
 
 /* =============
@@ -947,7 +973,7 @@ footer > div #op6 #op6 {
     Tutoring
 ============= */
 #tutoring {
-  padding: 20px;
+  padding: 30px;
   background-color: #81B29B;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -972,6 +998,7 @@ footer > div #op6 #op6 {
   grid-column: 1/2;
   grid-row: 2/3;
   padding: 30px;
+  margin-right: 10px;
 }
 #tutoring #eng #englogo {
   color: #DF7A5F;
@@ -998,11 +1025,15 @@ footer > div #op6 #op6 {
   grid-column: 3/4;
   grid-row: 2/3;
   padding: 30px;
+  margin-left: 10px;
 }
 #tutoring #stud #studlogo {
   color: #DF7A5F;
   font-size: 70px;
   padding-bottom: 20px;
+}
+#tutoring #see {
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   #tutoring {
@@ -1105,12 +1136,23 @@ footer > div #op6 #op6 {
   padding: 20px;
   text-align: center;
   color: #242741;
+  font-size: 15px;
 }
 #duk #question {
   grid-column: 1/1;
   color: #F2CC8F;
   font-size: 70px;
   text-align: left;
+}
+@media (min-width: 768px) {
+  #duk {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #duk {
+    font-size: 25px;
+  }
 }
 
 /* =============

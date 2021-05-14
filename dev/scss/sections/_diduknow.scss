@@ -10,13 +10,18 @@
     padding: 20px;
     text-align: center;
     color: $darkmidnight;
+    font-size: 15px;
     #question {
         grid-column: 1 / 1;
         color: $lightmustard;
         font-size: 70px;
         text-align: left;
-
     }
-
+@include md {
+    font-size: 20px;
+}
+@include lg {
+    font-size: 25px;
+}
 
 }
