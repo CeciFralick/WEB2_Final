@@ -8,14 +8,20 @@
     display: grid;
     grid-template-columns: 4;
 
+    #arrows {
+        color: $evergreen;
+        font-size: 30px;
+    }
+
     img {
         width: 100%;
-      }
+        padding: 10px;
+    }
 
-    #brainimg{
+    #brainimg {
         grid-area: auto;
         width: auto;
-        align-content: center; 
+        align-content: center;
         grid-column: 4 / -1;
     }
 
@@ -25,5 +31,21 @@
         padding-left: 20px;
         text-align: center;
         grid-column: 4;
+    }
+
+    @include md{
+        #arrows {
+            color: $evergreen;
+            font-size: 50px;
+        }
+
+    }
+
+    @include lg{
+        #arrows {
+            color: $evergreen;
+            font-size: 70px;
+        }
+
     }
 }
