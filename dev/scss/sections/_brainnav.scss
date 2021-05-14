@@ -8,10 +8,15 @@
     display: grid;
     grid-template-columns: 4;
 
+    img {
+        width: 100%;
+      }
+
     #brainimg{
         grid-area: auto;
         width: auto;
         align-content: center; 
+        grid-column: 4 / -1;
     }
 
     #box {

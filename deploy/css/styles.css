@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =============
     Mixins
 ============= */
@@ -483,9 +484,21 @@ header #top {
     font-size: 15px;
   }
 }
+@media (min-width: 1024px) {
+  header #top {
+    font-size: 20px;
+  }
+}
+header img {
+  width: 100%;
+}
 header #nav {
   background-color: #242741;
   color: #DDAC71;
+  padding-left: 20px;
+  text-align: center;
+  grid-column: 4;
+  font-size: 20px;
 }
 header > div {
   display: grid;
@@ -507,7 +520,7 @@ header > div #burger-container {
 }
 @media (min-width: 1024px) {
   header > div #burger-container {
-    display: none !important;
+    display: none;
   }
 }
 header > div #burger-container i {
@@ -528,80 +541,246 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
-footer {
-  color: #DDAC71;
-  background-color: #242741;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
-}
-footer #smlogos ul li {
-  display: inline-block;
-  font-size: 32px;
-}
-footer h5 {
+footer h2 {
   font-family: "karla", sans-serif;
 }
 footer > div {
+  background-color: #242741;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
   grid-area: footer;
   color: #DDAC71;
 }
-footer > div #locations {
-  grid-area: "footer";
+footer > div #op1,
+footer > div #op2 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px auto auto 250px;
+  grid-template-areas: "locations email";
+  padding: 10px;
+  gap: 16px;
 }
-footer > div #email {
-  grid-area: "footer";
+footer > div #op1 #op1,
+footer > div #op2 #op1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  grid-area: "ab";
+  padding: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+footer > div #op1 #op2,
+footer > div #op2 #op2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  grid-area: "ab";
+  padding: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+footer > div #op3,
+footer > div #op4,
+footer > div #op5,
+footer > div #op6 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px auto 250px;
+  grid-template-areas: "locations email";
+  padding: 10px;
+  gap: 16px;
+}
+footer > div #op3 #op3,
+footer > div #op4 #op3,
+footer > div #op5 #op3,
+footer > div #op6 #op3 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  grid-area: "ab";
+  padding: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+footer > div #op3 #op4,
+footer > div #op4 #op4,
+footer > div #op5 #op4,
+footer > div #op6 #op4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-area: "co";
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+footer > div #op3 #op5,
+footer > div #op4 #op5,
+footer > div #op5 #op5,
+footer > div #op6 #op5 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  grid-area: "fu";
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+footer > div #op3 #op6,
+footer > div #op4 #op6,
+footer > div #op5 #op6,
+footer > div #op6 #op6 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-area: "ou";
+  padding: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 250px auto 250px;
-    grid-template-areas: "locations email";
-    gap: 16px;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto;
+    grid-template-areas: "me si" "ab co fu ou" "fi";
+    gap: 10px;
   }
-  footer > div #locations {
-    grid-area: #103c49;
-    grid-area: "locations";
+  footer > div #op1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    grid-area: "me";
+    margin: 10px;
+  }
+  footer > div #op2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    grid-area: "si";
+    margin: 10px;
+  }
+  footer > div #op3 {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    grid-area: "ab";
+    padding: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
   }
-  footer > div #email {
-    grid-area: "email";
+  footer > div #op4 {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    grid-area: "co";
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  footer > div #op5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    grid-area: "fu";
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  footer > div #op6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    grid-area: "ou";
+    padding: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  footer > div #final {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    grid-area: "fi";
+    padding: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
   }
 }
 @media (min-width: 1024px) {
   footer > div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 250px auto 250px;
-    grid-template-areas: "locations email";
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto;
+    grid-template-areas: "me si" "ab co fu ou" "fi";
     gap: 16px;
   }
-  footer > div #locations {
-    grid-area: "locations";
+  footer > div #op1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    grid-area: "me";
+    padding-left: 10px;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: solid;
+    border-left: none;
+    border-color: #DDAC71;
+    border-width: 10px;
+  }
+  footer > div #op2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    grid-area: "si";
+    padding-right: 10px;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: solid;
+    border-color: #DDAC71;
+    border-width: 10px;
+  }
+  footer > div #op3 {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    grid-area: "ab";
+    padding: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
   }
-  footer > div #email {
-    grid-area: "email";
+  footer > div #op4 {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    grid-area: "co";
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
-}
-footer > div #h1footer {
-  padding-top: 20px;
-}
-@media (min-width: 768px) {
-  footer > div #h1footer {
-    text-align: left;
+  footer > div #op5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    grid-area: "fu";
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
-}
-@media (min-width: 1024px) {
-  footer > div #h1footer {
-    text-align: left;
+  footer > div #op6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    grid-area: "ou";
+    padding: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  footer > div #final {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    grid-area: "fi";
+    padding: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -635,23 +814,106 @@ footer > div #h1footer {
     Natalia
 ============= */
 #natalia {
+  display: grid;
+  color: #242741;
+  grid-template-columns: 3;
   background-color: #81B29B;
+  font-size: 12px;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: solid;
+  border-left: solid;
+  border-color: #6CA087;
+  border-width: 60px;
   padding: 20px;
+}
+#natalia #NatText {
+  display: none;
+}
+@media (min-width: 768px) {
+  #natalia {
+    border-style: solid;
+    border-top: none;
+    font-size: 16px;
+    border-bottom: none;
+    border-right: solid;
+    border-left: solid;
+    border-color: #6CA087;
+    border-width: 35px;
+    padding: 20px;
+  }
+  #natalia #NatText {
+    display: grid;
+    padding: 30px;
+    padding-right: 50px;
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1024px) {
+  #natalia {
+    border-style: solid;
+    border-top: none;
+    font-size: 18px;
+    border-bottom: none;
+    border-right: solid;
+    border-left: solid;
+    border-color: #6CA087;
+    border-width: 55px;
+    padding: 20px;
+  }
+  #natalia #NatText {
+    display: grid;
+    padding: 30px;
+    padding-right: 50px;
+    grid-column: 2/3;
+  }
+}
+#natalia img {
+  width: 100%;
 }
 
 /* =============
     Skills
 ============= */
 #skills {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  padding: 20px;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: auto auto;
   background-color: #DDAC71;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
   color: #242741;
 }
 #skills #bullets {
+  display: flex;
   text-align: left;
+  justify-content: center;
+  grid-column: 1/1;
+  display: flex;
+}
+#skills #exclamation {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  grid-column: 1/1;
+  grid-row: 1/2;
+  color: #F2CC8F;
+  font-size: 100px;
+  text-align: left;
+}
+#skills ul {
+  list-style: none;
+}
+#skills ul li::before {
+  content: "•";
+  color: #81B29B;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* =============
@@ -750,14 +1012,18 @@ footer > div #h1footer {
 ============= */
 #section-3 {
   color: #F2CC8F;
-  margin: 20px;
+  margin: 40px;
   padding: 20px;
   display: grid;
   font-size: 13px;
 }
+#section-3 img {
+  width: 100%;
+}
 #section-3 #boxes {
   padding: 10px;
   display: grid;
+  margin: 30px;
   grid-template-columns: repeat(2, 2fr);
 }
 #section-3 #boxes #box1 {
@@ -789,10 +1055,14 @@ footer > div #h1footer {
   display: grid;
   grid-template-columns: 4;
 }
+#brain img {
+  width: 100%;
+}
 #brain #brainimg {
   grid-area: auto;
   width: auto;
   align-content: center;
+  grid-column: 4/-1;
 }
 #brain #box {
   background-color: #81B29B;

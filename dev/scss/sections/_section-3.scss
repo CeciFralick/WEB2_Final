@@ -4,15 +4,19 @@
 
 #section-3 {
     color: $lightmustard;
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     display: grid;
     font-size: 13px;
 
+    img {
+        width: 100%;
+      }
 
     #boxes {
         padding: 10px;
         display: grid;
+        margin: 30px;
         grid-template-columns: repeat(2, 2fr);
         #box1 {
             outline: auto;

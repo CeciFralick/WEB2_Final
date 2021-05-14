@@ -129,14 +129,40 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section-1\/natalia.png" : {
+    "\/deploy\/img\/natalia\/natalia.png" : {
       "ft" : 32768,
       "iS" : 43919,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section-1\/natalia.png",
+      "oAP" : "\/deploy\/img\/natalia\/natalia.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/section-3\/sec3_1.png" : {
+      "ft" : 32768,
+      "iS" : 186527,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section-3\/sec3_1.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/section-3\/sec3_2.png" : {
+      "ft" : 32768,
+      "iS" : 235944,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section-3\/sec3_2.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,

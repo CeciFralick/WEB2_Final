@@ -3,14 +3,44 @@
 ============= */
 
 #skills {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: auto auto;
+    background-color: $mustard;
     margin: 10px;
-    background-color: $mustard; 
+    padding: 20px;
+    text-align: center;
     color: $darkmidnight;
 
     #bullets{
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        grid-column: 1 / 1;
+        display: flex;
+    }
+    #exclamation {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: left;        
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        color: $lightmustard;
+        font-size: 100px;
         text-align: left;
     }
+    ul {
+        list-style: none;
+      }
+      
+      ul li::before {
+        content: "\2022";
+        color: $mint; 
+        font-size: 20px;
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -1em; 
+      }
+
 }
