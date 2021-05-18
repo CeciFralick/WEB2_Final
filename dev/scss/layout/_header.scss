@@ -18,10 +18,16 @@ header {
       font-size: 20px;
     }
   }
+padding-bottom: 20px;
 
-  img {
-    width: 100%;
-  }
+  #background {
+    align-items:flex-end;
+    background-image: url("../img/header/helper1.png");
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 80vh;
+  
 
   #nav {
     background-color: #242741;
@@ -43,36 +49,29 @@ header {
       "burger survival"
       "nav nav";
     grid-template-columns: 20% auto;
-
-    @include lg {
-      grid-template-areas: "nav survival";
-      grid-template-columns: 20% auto;
     }
-
-
-    #burger-container {
-      align-items: center;
-      display: flex;
-      grid-area: burger;
-      padding: 10px;
-
-      @include lg {
-        display: none
-      }
 
       i {
         cursor: pointer;
         font-size: rem-calc(30);
       }
-    }
+
 
     #nav-container {
-      display: none;
       grid-area: nav;
-      padding: 20px 10px 10px;
+      padding: 20px 10px 20px;
+      font-size: 16px;
+
+      @include md {
+        display: block !important;
+        padding: 20px 30px 20px;
+        font-size: 18px;
+      }
 
       @include lg {
         display: block !important;
+        padding: 30px 30px 30px;
+        font-size: 20px;
       }
     }
   }

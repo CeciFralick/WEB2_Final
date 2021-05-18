@@ -3,49 +3,93 @@
 ============= */
 
 #brain {
-    background-color: $mint;
-    padding: 15px;
     display: grid;
-    grid-template-columns: 4;
+
+    background-color: $mint;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-column: 10px auto auto auto 10px;
+    background-image: url("../img/brain/BrainSM.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include md {
+        min-height: 80px;
+        background-size: 700px;
+    }
+
+    @include lg {
+        min-height: 100px;
+        background-size: 90%;
+    }
+
 
     #arrows {
         color: $evergreen;
         font-size: 30px;
-    }
+        grid-column: 1 / 1;
+        grid-row: 10px auto auto;
 
-    img {
-        width: 100%;
-        padding: 10px;
-    }
-
-    #brainimg {
-        grid-area: auto;
-        width: auto;
-        align-content: center;
-        grid-column: 4 / -1;
-    }
-
-    #box {
-        background-color: $mint;
-        color: $darkmidnight;
-        padding-left: 20px;
-        text-align: center;
-        grid-column: 4;
-    }
-
-    @include md{
-        #arrows {
+        @include md {
             color: $evergreen;
             font-size: 50px;
         }
 
-    }
-
-    @include lg{
-        #arrows {
+        @include lg {
             color: $evergreen;
             font-size: 70px;
         }
-
     }
+
+
+    #box {
+        background-color: $mint;
+        color: $darkmidnight;
+        padding: 10px;
+        font-size: 11px;
+        text-align: center;
+        grid-column: 6 / 6;
+        grid-row: 2 / 4;
+        height: 100px;
+        width: 120px;
+
+        h3 {
+            border-style: solid;
+            border-top: none;
+            border-bottom: solid;
+            border-right: none;
+            border-left: none;
+            border-width: 1px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 12px;
+            padding-top: 5px;
+
+            @include md {
+                line-height: 15px;
+            }
+            @include lg {
+                line-height: 20px;
+            }
+
+        }
+
+        @include md {
+            font-size: 15px;
+            height: 130px;
+            width: 180px;
+        }
+
+        @include lg {
+            padding: 15px;
+            font-size: 18px;
+            height: 180px;
+            width: 200px;
+        }
+    }
+
 }

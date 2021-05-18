@@ -47,6 +47,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/exclamation.png" : {
+      "ft" : 32768,
+      "iS" : 6244,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/exclamation.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/footer\/arrow.png" : {
       "ft" : 32768,
       "iS" : 742,
@@ -137,6 +150,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/question.png" : {
+      "ft" : 32768,
+      "iS" : 8157,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/question.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,

@@ -469,8 +469,6 @@ textarea {
     Header
 ============= */
 header {
-  display: grid;
-  grid-gap: 3px;
   padding-bottom: 20px;
 }
 header #top {
@@ -489,10 +487,18 @@ header #top {
     font-size: 20px;
   }
 }
-header img {
-  width: 100%;
+header #background {
+  align-items: flex-end;
+  background-image: url("../img/header/helper1.png");
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 80vh;
+  display: grid;
+  grid-gap: 3px;
+  padding-bottom: 20px;
 }
-header #nav {
+header #background #nav {
   background-color: #242741;
   color: #DDAC71;
   padding-left: 20px;
@@ -500,41 +506,33 @@ header #nav {
   grid-column: 4;
   font-size: 20px;
 }
-header > div {
+header #background > div {
   display: grid;
   color: #DDAC71;
   grid-template-areas: "burger survival" "nav nav";
   grid-template-columns: 20% auto;
 }
-@media (min-width: 1024px) {
-  header > div {
-    grid-template-areas: "nav survival";
-    grid-template-columns: 20% auto;
-  }
-}
-header > div #burger-container {
-  align-items: center;
-  display: flex;
-  grid-area: burger;
-  padding: 10px;
-}
-@media (min-width: 1024px) {
-  header > div #burger-container {
-    display: none;
-  }
-}
-header > div #burger-container i {
+header #background i {
   cursor: pointer;
   font-size: 1.875rem;
 }
-header > div #nav-container {
-  display: none;
+header #background #nav-container {
   grid-area: nav;
-  padding: 20px 10px 10px;
+  padding: 20px 10px 20px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  header #background #nav-container {
+    display: block !important;
+    padding: 20px 30px 20px;
+    font-size: 18px;
+  }
 }
 @media (min-width: 1024px) {
-  header > div #nav-container {
+  header #background #nav-container {
     display: block !important;
+    padding: 30px 30px 30px;
+    font-size: 20px;
   }
 }
 
@@ -805,7 +803,7 @@ footer > div #op6 #op6 {
 @media (min-width: 1024px) {
   #section-1 {
     font-size: 17px;
-    margin: 40px;
+    margin: 60px;
     padding: 40px;
   }
 }
@@ -874,17 +872,33 @@ footer > div #op6 #op6 {
 }
 
 /* =============
-    Skills
+Skills
 ============= */
 #skills {
   display: grid;
   grid-template-columns: repeat(2 1fr);
+  background-image: url("../img/exclamation.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: right;
+  align-items: right;
   grid-template-rows: auto auto;
   background-color: #DDAC71;
   margin: 10px;
   padding: 20px;
   text-align: center;
   color: #242741;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #skills {
+    font-size: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  #skills {
+    font-size: 200px;
+  }
 }
 #skills #head {
   padding-left: 20px;
@@ -893,20 +907,11 @@ footer > div #op6 #op6 {
 #skills #bullets {
   display: flex;
   text-align: left;
+  padding-top: 20px;
   justify-content: center;
   grid-column: 1/1;
   display: flex;
   font-size: 20px;
-}
-#skills #exclamation {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: left;
-  grid-column: 1/1;
-  grid-row: 1/2;
-  color: #F2CC8F;
-  font-size: 100px;
-  text-align: left;
 }
 #skills ul {
   list-style: none;
@@ -922,7 +927,7 @@ footer > div #op6 #op6 {
 }
 @media (min-width: 768px) {
   #skills {
-    font-size: 17px;
+    font-size: 18px;
   }
   #skills #head {
     padding-left: 20px;
@@ -1059,22 +1064,62 @@ footer > div #op6 #op6 {
 #section-3 #boxes {
   padding: 10px;
   display: grid;
-  margin: 30px;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  #section-3 #boxes {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+  }
 }
 #section-3 #boxes #box1 {
-  outline: auto;
   padding: 10px;
-  margin-right: 10px;
-  outline-color: #81B29B;
+  margin-bottom: 10px;
+  border-color: #81B29B;
+  border-style: solid;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: solid;
+  border-left: solid;
+  border-width: 2px;
+  grid-column: 1/2;
+  grid-row: 1/2;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #section-3 #boxes #box1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    outline-color: #81B29B;
+    text-align: center;
+  }
+}
 #section-3 #boxes #box2 {
-  outline: auto;
   padding: 10px;
-  margin-left: 10px;
-  outline-color: #81B29B;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: #81B29B;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: solid;
+  border-left: solid;
+  border-width: 2px;
+  grid-column: 1/2;
+  grid-row: 2/3;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #section-3 #boxes #box2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    outline-color: #81B29B;
+  }
 }
 @media (min-width: 768px) {
   #section-3 {
@@ -1086,31 +1131,34 @@ footer > div #op6 #op6 {
     brainnav
 ============= */
 #brain {
-  background-color: #81B29B;
-  padding: 15px;
   display: grid;
-  grid-template-columns: 4;
+  background-color: #81B29B;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column: 10px auto auto auto 10px;
+  background-image: url("../img/brain/BrainSM.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #brain {
+    min-height: 80px;
+    background-size: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  #brain {
+    min-height: 100px;
+    background-size: 90%;
+  }
 }
 #brain #arrows {
   color: #6CA087;
   font-size: 30px;
-}
-#brain img {
-  width: 100%;
-  padding: 10px;
-}
-#brain #brainimg {
-  grid-area: auto;
-  width: auto;
-  align-content: center;
-  grid-column: 4/-1;
-}
-#brain #box {
-  background-color: #81B29B;
-  color: #242741;
-  padding-left: 20px;
-  text-align: center;
-  grid-column: 4;
+  grid-column: 1/1;
+  grid-row: 10px auto auto;
 }
 @media (min-width: 768px) {
   #brain #arrows {
@@ -1124,34 +1172,90 @@ footer > div #op6 #op6 {
     font-size: 70px;
   }
 }
+#brain #box {
+  background-color: #81B29B;
+  color: #242741;
+  padding: 10px;
+  font-size: 11px;
+  text-align: center;
+  grid-column: 6/6;
+  grid-row: 2/4;
+  height: 100px;
+  width: 120px;
+}
+#brain #box h3 {
+  border-style: solid;
+  border-top: none;
+  border-bottom: solid;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+  padding-bottom: 5px;
+}
+#brain #box p {
+  line-height: 12px;
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  #brain #box p {
+    line-height: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  #brain #box p {
+    line-height: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #brain #box {
+    font-size: 15px;
+    height: 130px;
+    width: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  #brain #box {
+    padding: 15px;
+    font-size: 18px;
+    height: 180px;
+    width: 200px;
+  }
+}
 
 /* =============
     diduknow
 ============= */
-#duk {
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
+#did {
+  background-image: url("../img/question.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: left;
+  align-items: left;
   background-color: #DDAC71;
   margin: 10px;
   padding: 20px;
+}
+#did #duk {
+  display: grid;
+  padding-left: 50px;
+  grid-template-columns: 2 1fr;
+  grid-template-rows: auto auto auto;
   text-align: center;
+  justify-content: center;
+  list-style: none;
   color: #242741;
   font-size: 15px;
 }
-#duk #question {
-  grid-column: 1/1;
-  color: #F2CC8F;
-  font-size: 70px;
-  text-align: left;
-}
 @media (min-width: 768px) {
-  #duk {
+  #did #duk {
     font-size: 20px;
+    padding-left: 100px;
   }
 }
 @media (min-width: 1024px) {
-  #duk {
+  #did #duk {
     font-size: 25px;
+    padding-left: 120px;
   }
 }
 

@@ -1,18 +1,30 @@
 /* =============
-    Skills
+Skills
 ============= */
 
 #skills {
     display: grid;
     grid-template-columns: repeat(2 1fr);
+    background-image: url("../img/exclamation.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right;
+    align-items: right;
     grid-template-rows: auto auto;
     background-color: $mustard;
     margin: 10px;
     padding: 20px;
     text-align: center;
     color: $darkmidnight;
+    @include md {
+        font-size: 180px;
+    }
 
-    #head{
+    @include lg {
+        font-size: 200px;
+    }
+
+    #head {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -20,22 +32,15 @@
     #bullets {
         display: flex;
         text-align: left;
+        padding-top: 20px;
         justify-content: center;
         grid-column: 1 / 1;
         display: flex;
         font-size: 20px;
     }
 
-    #exclamation {
-        display: flex;
-        flex-flow: row wrap;
-        text-align: left;
-        grid-column: 1 / 1;
-        grid-row: 1 / 2;
-        color: $lightmustard;
-        font-size: 100px;
-        text-align: left;
-    }
+    display: flex;
+
 
     ul {
         list-style: none;
@@ -52,8 +57,9 @@
     }
 
     @include md {
-        font-size: 17px;
-        #head{
+        font-size: 18px;
+
+        #head {
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -61,11 +67,13 @@
 
     @include lg {
         font-size: 20px;
-        #head{
+
+        #head {
             padding-left: 20px;
             padding-right: 20px;
         }
-        #bullets{
+
+        #bullets {
             font-size: 25px;
         }
     }

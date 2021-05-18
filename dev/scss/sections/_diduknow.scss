@@ -2,26 +2,38 @@
     diduknow
 ============= */
 
-#duk {
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
+#did {
+    background-image: url("../img/question.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: left;
+    align-items: left;
     background-color: $mustard;
     margin: 10px;
     padding: 20px;
-    text-align: center;
-    color: $darkmidnight;
-    font-size: 15px;
-    #question {
-        grid-column: 1 / 1;
-        color: $lightmustard;
-        font-size: 70px;
-        text-align: left;
+
+    #duk {
+        display: grid;
+        padding-left: 50px;
+        grid-template-columns: (2 1fr);
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        color: $darkmidnight;
+        font-size: 15px;
+
+        @include md {
+            font-size: 20px;
+            padding-left: 100px;
+        }
+
+        @include lg {
+            font-size: 25px;
+            padding-left: 120px;
+        }
     }
-@include md {
-    font-size: 20px;
-}
-@include lg {
-    font-size: 25px;
-}
+
+
 
 }
