@@ -1039,12 +1039,24 @@ Skills
 }
 #tutoring #see {
   padding-top: 20px;
+  text-align: right;
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 @media (min-width: 768px) {
   #tutoring {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #tutoring {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    font-size: 19px;
   }
 }
 
@@ -1093,7 +1105,6 @@ Skills
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 2px;
-    outline-color: #81B29B;
     text-align: center;
   }
 }
@@ -1118,7 +1129,6 @@ Skills
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 2px;
-    outline-color: #81B29B;
   }
 }
 @media (min-width: 768px) {
