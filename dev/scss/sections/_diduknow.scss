@@ -5,12 +5,13 @@
 #did {
     background-image: url("../img/question.png");
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 150px;
     background-position: left;
     align-items: left;
     background-color: $mustard;
     margin: 10px;
     padding: 20px;
+
 
     #duk {
         display: grid;
@@ -31,6 +32,15 @@
         @include lg {
             font-size: 25px;
             padding-left: 120px;
+            h1{
+                font-size: 65px;
+                text-align: center;
+            }
+        
+            h3{
+                font-size: 35px;
+                text-align: center;
+            }
         }
     }
 

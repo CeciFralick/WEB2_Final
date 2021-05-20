@@ -3,6 +3,11 @@ Skills
 ============= */
 
 #skills {
+    li {
+        font-family: 'Dosis', sans-serif;
+        font-weight: 100;
+        padding-bottom: 5px;
+    }
     display: grid;
     grid-template-columns: repeat(2 1fr);
     background-image: url("../img/exclamation.png");

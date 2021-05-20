@@ -12,7 +12,7 @@
     grid-column: 10px auto auto auto 10px;
     background-image: url("../img/brain/BrainSM.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 
     @include md {
@@ -62,12 +62,18 @@
             border-right: none;
             border-left: none;
             border-width: 1px;
+            padding-bottom: 5px;        
+            font-family: 'Dosis', sans-serif;
+            font-weight: 40px;
             padding-bottom: 5px;
         }
 
         p {
             line-height: 12px;
             padding-top: 5px;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 100;
+            padding-bottom: 5px;
 
             @include md {
                 line-height: 15px;

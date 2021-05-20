@@ -3,18 +3,27 @@
 ============= */
 
 #list {
-    font-family: 'Karla', sans-serif;
-    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 50;
     font-size: 13px;
     background-color: $evergreen;
     color: $darkmidnight;
     padding: 10px;
     line-height: 50px;
     text-align: center;
+
     @include md {
-font-size: 17px;
+        font-size: 17px;
     }
+
     @include lg {
-        font-size: 19px;
-            }
+        font-size: 22px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 90;
+        background-color: $evergreen;
+        color: $darkmidnight;
+        padding: 20px;
+        line-height: 70px;
+        text-align: center;
+    }
 }

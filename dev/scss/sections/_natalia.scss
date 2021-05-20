@@ -2,7 +2,12 @@
     Natalia
 ============= */
 
-
+#nat{
+    h1{
+        color: $mint;
+        padding-top: 10px;
+        line-height: 20px;
+    }
 #natalia {
     display: grid;
     color: $darkmidnight;
@@ -62,4 +67,5 @@
     img {
         width: 100%;
     }
+}
 }

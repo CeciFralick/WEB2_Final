@@ -378,7 +378,7 @@ ul li {
 }
 
 p {
-  font-family: "Karla", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 22px;
 }
 
@@ -535,9 +535,6 @@ header #background #nav-container {
 /* =============
     Footer
 ============= */
-footer h2 {
-  font-family: "karla", sans-serif;
-}
 footer > div {
   background-color: #242741;
   text-align: center;
@@ -777,6 +774,14 @@ footer > div #op6 #op6 {
     margin-left: 10px;
   }
 }
+footer > div h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: Bold;
+}
+footer > div h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50px;
+}
 
 /* =============
     Section-1
@@ -817,7 +822,12 @@ footer > div #op6 #op6 {
 /* =============
     Natalia
 ============= */
-#natalia {
+#nat h1 {
+  color: #81B29B;
+  padding-top: 10px;
+  line-height: 20px;
+}
+#nat #natalia {
   display: grid;
   color: #242741;
   grid-template-columns: 3;
@@ -832,11 +842,11 @@ footer > div #op6 #op6 {
   border-width: 60px;
   padding: 20px;
 }
-#natalia #NatText {
+#nat #natalia #NatText {
   display: none;
 }
 @media (min-width: 768px) {
-  #natalia {
+  #nat #natalia {
     border-style: solid;
     border-top: none;
     font-size: 16px;
@@ -847,7 +857,7 @@ footer > div #op6 #op6 {
     border-width: 35px;
     padding: 20px;
   }
-  #natalia #NatText {
+  #nat #natalia #NatText {
     display: grid;
     padding: 30px;
     padding-right: 50px;
@@ -855,7 +865,7 @@ footer > div #op6 #op6 {
   }
 }
 @media (min-width: 1024px) {
-  #natalia {
+  #nat #natalia {
     border-style: solid;
     border-top: none;
     font-size: 18px;
@@ -866,14 +876,14 @@ footer > div #op6 #op6 {
     border-width: 55px;
     padding: 20px;
   }
-  #natalia #NatText {
+  #nat #natalia #NatText {
     display: grid;
     padding: 30px;
     padding-right: 50px;
     grid-column: 2/3;
   }
 }
-#natalia img {
+#nat #natalia img {
   width: 100%;
 }
 
@@ -895,6 +905,11 @@ Skills
   text-align: center;
   color: #242741;
   display: flex;
+}
+#skills li {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  padding-bottom: 5px;
 }
 @media (min-width: 768px) {
   #skills {
@@ -991,7 +1006,7 @@ Skills
   padding: 30px;
   background-color: #81B29B;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
 #tutoring h1,
@@ -1101,6 +1116,7 @@ Skills
   font-family: "Dosis", sans-serif;
   font-weight: 100;
   color: #81B29B;
+  padding-bottom: 4px;
 }
 #section-3 #cont {
   display: none;
@@ -1110,7 +1126,7 @@ Skills
     display: grid;
     font-size: 17px;
     color: #F2CC8F;
-    margin: 10px;
+    margin: 2px;
     padding: 20px;
   }
 }
@@ -1137,7 +1153,7 @@ Skills
   border-right: solid;
   border-left: solid;
   border-color: #81B29B;
-  border-width: 2px;
+  border-width: 8px;
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: center;
@@ -1150,18 +1166,19 @@ Skills
     margin-right: 10px;
     margin-bottom: 2px;
     text-align: center;
+    border-width: 6px;
   }
 }
 #section-3 #boxes #box2 {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   border-style: solid;
   border-top: solid;
   border-bottom: solid;
   border-right: solid;
   border-left: solid;
   border-color: #81B29B;
-  border-width: 2px;
+  border-width: 8px;
   grid-column: 1/2;
   grid-row: 2/3;
   text-align: center;
@@ -1173,6 +1190,7 @@ Skills
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 2px;
+    border-width: 6px;
   }
 }
 @media (min-width: 768px) {
@@ -1193,7 +1211,7 @@ Skills
   grid-column: 10px auto auto auto 10px;
   background-image: url("../img/brain/BrainSM.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 @media (min-width: 768px) {
@@ -1245,10 +1263,16 @@ Skills
   border-left: none;
   border-width: 1px;
   padding-bottom: 5px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 40px;
+  padding-bottom: 5px;
 }
 #brain #box p {
   line-height: 12px;
   padding-top: 5px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  padding-bottom: 5px;
 }
 @media (min-width: 768px) {
   #brain #box p {
@@ -1282,7 +1306,7 @@ Skills
 #did {
   background-image: url("../img/question.png");
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 150px;
   background-position: left;
   align-items: left;
   background-color: #DDAC71;
@@ -1310,6 +1334,14 @@ Skills
   #did #duk {
     font-size: 25px;
     padding-left: 120px;
+  }
+  #did #duk h1 {
+    font-size: 65px;
+    text-align: center;
+  }
+  #did #duk h3 {
+    font-size: 35px;
+    text-align: center;
   }
 }
 
@@ -1359,8 +1391,8 @@ Skills
     bottomlist
 ============= */
 #list {
-  font-family: "Karla", sans-serif;
-  font-weight: 100;
+  font-family: "Dosis", sans-serif;
+  font-weight: 50;
   font-size: 13px;
   background-color: #6CA087;
   color: #242741;
@@ -1375,6 +1407,13 @@ Skills
 }
 @media (min-width: 1024px) {
   #list {
-    font-size: 19px;
+    font-size: 22px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 90;
+    background-color: #6CA087;
+    color: #242741;
+    padding: 20px;
+    line-height: 70px;
+    text-align: center;
   }
 }
