@@ -3,24 +3,34 @@
 ============= */
 
 #section-1 {
-
-        color: $lightmustard;
-        margin: 20px;
-        padding: 20px;
-        display: grid;
-
-        font-size: 13px;
-        padding: 10px;
-
-        @include md {
-            font-size: 15px;
-            margin: 40px;
-            padding: 40px;
-        }
-
-        @include lg {
-            font-size: 17px;
-            margin: 60px;
-            padding: 40px;
-        }
+    H1 {
+        font-family: 'Dosis', sans-serif;
+        font-weight: 100;
+        padding-bottom: 5px;
     }
+    H3 {
+        font-family: 'Dosis', sans-serif;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    color: $lightmustard;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+
+    font-size: 13px;
+    padding: 10px;
+
+    @include md {
+        font-size: 15px;
+        margin: 40px;
+        padding: 40px;
+    }
+
+    @include lg {
+        font-size: 17px;
+        margin: 60px;
+        padding: 40px;
+    }
+}

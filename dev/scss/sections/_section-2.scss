@@ -3,7 +3,13 @@
 ============= */
 
 #section-2 {
-    font-family: 'Montserrat', sans-serif;
+
+    H1 {
+        font-family: 'Dosis', sans-serif;
+        font-weight: 100;
+        padding-bottom: 5px;
+    }
+
     color: $lightmustard;
     margin: 20px;
     padding: 20px;

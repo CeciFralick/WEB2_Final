@@ -373,11 +373,6 @@ ul li {
   display: none;
 }
 
-h1 {
-  font-family: "Karla", sans-serif;
-  font-family: "Montserrat", sans-serif;
-}
-
 .section-1 {
   grid-area: auto;
 }
@@ -472,6 +467,7 @@ header {
   padding-bottom: 20px;
 }
 header #top {
+  font-family: "Montserrat", sans-serif;
   background-color: #ee7e51;
   color: #242741;
   padding: 10px;
@@ -793,6 +789,16 @@ footer > div #op6 #op6 {
   font-size: 13px;
   padding: 10px;
 }
+#section-1 H1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+#section-1 H3 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
 @media (min-width: 768px) {
   #section-1 {
     font-size: 15px;
@@ -951,13 +957,17 @@ Skills
     Section-2
 ============= */
 #section-2 {
-  font-family: "Montserrat", sans-serif;
   color: #F2CC8F;
   margin: 20px;
   padding: 20px;
   display: grid;
   font-size: 13px;
   padding: 10px;
+}
+#section-2 H1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  padding-bottom: 5px;
 }
 @media (min-width: 768px) {
   #section-2 {
@@ -984,6 +994,17 @@ Skills
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
+#tutoring h1,
+#tutoring h3,
+#tutoring p {
+  font-family: "Dosis", sans-serif;
+}
+#tutoring h1 {
+  padding-bottom: 10px;
+}
+#tutoring h3 {
+  padding-bottom: 5px;
+}
 #tutoring #Theader {
   text-align: center;
   grid-column: 1/-1;
@@ -994,6 +1015,7 @@ Skills
 #tutoring h4 {
   flex-direction: right;
   color: #242741;
+  font-family: "Dosis", sans-serif;
 }
 #tutoring #eng {
   background-color: #242741;
@@ -1070,11 +1092,33 @@ Skills
   display: grid;
   font-size: 13px;
 }
+#section-3 H1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+#section-3 H2 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  color: #81B29B;
+}
+#section-3 #cont {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-3 #cont {
+    display: grid;
+    font-size: 17px;
+    color: #F2CC8F;
+    margin: 10px;
+    padding: 20px;
+  }
+}
 #section-3 img {
   width: 100%;
 }
 #section-3 #boxes {
-  padding: 10px;
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
@@ -1087,12 +1131,12 @@ Skills
 #section-3 #boxes #box1 {
   padding: 10px;
   margin-bottom: 10px;
-  border-color: #81B29B;
   border-style: solid;
   border-top: solid;
   border-bottom: solid;
   border-right: solid;
   border-left: solid;
+  border-color: #81B29B;
   border-width: 2px;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -1112,11 +1156,11 @@ Skills
   padding: 10px;
   margin-bottom: 10px;
   border-style: solid;
-  border-color: #81B29B;
   border-top: solid;
   border-bottom: solid;
   border-right: solid;
   border-left: solid;
+  border-color: #81B29B;
   border-width: 2px;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -1280,17 +1324,33 @@ Skills
   font-size: 13px;
   padding: 10px;
 }
+#section-4 H1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+#section-4 #bigtext {
+  display: none;
+}
 @media (min-width: 768px) {
-  #section-4 {
+  #section-4 #smtext {
+    display: none;
+  }
+  #section-4 #bigtext {
+    display: grid;
     font-size: 15px;
-    margin: 40px;
+    margin: 20px;
     padding: 40px;
   }
 }
 @media (min-width: 1024px) {
-  #section-4 {
+  #section-4 #smtext {
+    display: none;
+  }
+  #section-4 #bigtext {
+    display: grid;
     font-size: 17px;
-    margin: 40px;
+    margin: 20px;
     padding: 40px;
   }
 }
