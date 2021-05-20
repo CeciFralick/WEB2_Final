@@ -16,14 +16,14 @@ footer {
         #op2 {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 250px auto auto 250px;
-            grid-template-areas: "locations email";
+            grid-template-areas: "si me";
             padding: 10px;
             gap: 16px;
 
             #op1 {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
-                grid-area: "ab";
+                grid-area: "si";
                 padding: 10px;
                 padding-right: 10px;
                 margin-right: 10px;
@@ -32,7 +32,7 @@ footer {
             #op2 {
                 grid-column: 2 / 3;
                 grid-row: 1 / 2;
-                grid-area: "ab";
+                grid-area: "me";
                 padding: 10px;
                 padding-right: 10px;
                 margin-right: 10px;
@@ -44,50 +44,33 @@ footer {
         #op4,
         #op5,
         #op6 {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 250px auto 250px;
-            grid-template-areas: "locations email";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "ab  fu"
+                                 "co ou";
             padding: 10px;
-            gap: 16px;
 
             #op3 {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
                 grid-area: "ab";
-                padding: 10px;
-                padding-right: 10px;
-                margin-right: 10px;
             }
 
             #op4 {
                 grid-column: 2 / 3;
                 grid-row: 2 / 3;
                 grid-area: "co";
-                padding: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                margin-right: 10px;
-                margin-left: 10px;
             }
 
             #op5 {
                 grid-column: 3 / 4;
                 grid-row: 1 / 2;
                 grid-area: "fu";
-                padding: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                margin-right: 10px;
-                margin-left: 10px;
             }
 
             #op6 {
                 grid-column: 2 / 3;
                 grid-row: 2 / 3;
                 grid-area: "ou";
-                padding: 10px;
-                padding-left: 10px;
-                margin-left: 10px;
             }
         }
 
@@ -250,11 +233,12 @@ footer {
                 grid-column: 1 / 5;
                 grid-row: 3 / 4;
                 grid-area: "fi";
-                padding: 10px;
+                padding: 20px;
                 padding-left: 10px;
                 margin-left: 10px;
             }
         }
+
         h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: Bold;

@@ -548,7 +548,7 @@ footer > div #op1,
 footer > div #op2 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px auto auto 250px;
-  grid-template-areas: "locations email";
+  grid-template-areas: "si me";
   padding: 10px;
   gap: 16px;
 }
@@ -556,7 +556,7 @@ footer > div #op1 #op1,
 footer > div #op2 #op1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  grid-area: "ab";
+  grid-area: "si";
   padding: 10px;
   padding-right: 10px;
   margin-right: 10px;
@@ -565,7 +565,7 @@ footer > div #op1 #op2,
 footer > div #op2 #op2 {
   grid-column: 2/3;
   grid-row: 1/2;
-  grid-area: "ab";
+  grid-area: "me";
   padding: 10px;
   padding-right: 10px;
   margin-right: 10px;
@@ -574,11 +574,9 @@ footer > div #op3,
 footer > div #op4,
 footer > div #op5,
 footer > div #op6 {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px auto 250px;
-  grid-template-areas: "locations email";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "ab  fu" "co ou";
   padding: 10px;
-  gap: 16px;
 }
 footer > div #op3 #op3,
 footer > div #op4 #op3,
@@ -587,9 +585,6 @@ footer > div #op6 #op3 {
   grid-column: 1/2;
   grid-row: 1/2;
   grid-area: "ab";
-  padding: 10px;
-  padding-right: 10px;
-  margin-right: 10px;
 }
 footer > div #op3 #op4,
 footer > div #op4 #op4,
@@ -598,11 +593,6 @@ footer > div #op6 #op4 {
   grid-column: 2/3;
   grid-row: 2/3;
   grid-area: "co";
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 footer > div #op3 #op5,
 footer > div #op4 #op5,
@@ -611,11 +601,6 @@ footer > div #op6 #op5 {
   grid-column: 3/4;
   grid-row: 1/2;
   grid-area: "fu";
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 footer > div #op3 #op6,
 footer > div #op4 #op6,
@@ -624,9 +609,6 @@ footer > div #op6 #op6 {
   grid-column: 2/3;
   grid-row: 2/3;
   grid-area: "ou";
-  padding: 10px;
-  padding-left: 10px;
-  margin-left: 10px;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -769,7 +751,7 @@ footer > div #op6 #op6 {
     grid-column: 1/5;
     grid-row: 3/4;
     grid-area: "fi";
-    padding: 10px;
+    padding: 20px;
     padding-left: 10px;
     margin-left: 10px;
   }
