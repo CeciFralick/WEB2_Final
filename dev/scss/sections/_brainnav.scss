@@ -12,17 +12,18 @@
     grid-column: 10px auto auto auto 10px;
     background-image: url("../img/brain/BrainSM.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 30px;
+    background-size:500px;
     background-position: center;
 
     @include md {
         min-height: 80px;
-        background-size: 700px;
+        background-size: cover;
     }
 
     @include lg {
         min-height: 100px;
-        background-size: 90%;
+        background-size: cover;
     }
 
 
