@@ -827,8 +827,9 @@ footer > div h4 {
 @media (min-width: 1024px) {
   #section-1 {
     font-size: 17px;
-    margin: 60px;
-    padding: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 50px;
   }
 }
 
@@ -1007,8 +1008,9 @@ Skills
 @media (min-width: 1024px) {
   #section-2 {
     font-size: 17px;
-    margin: 40px;
-    padding: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 50px;
   }
 }
 
@@ -1129,7 +1131,13 @@ Skills
   font-family: "Dosis", sans-serif;
   font-weight: 100;
   color: #81B29B;
-  padding-bottom: 4px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-bottom: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 #section-3 #cont {
   display: none;
@@ -1209,6 +1217,14 @@ Skills
 @media (min-width: 768px) {
   #section-3 {
     font-size: 17px;
+  }
+}
+@media (min-width: 1024px) {
+  #section-3 {
+    font-size: 17px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 50px;
   }
 }
 
@@ -1435,8 +1451,9 @@ Skills
   #section-4 #bigtext {
     display: grid;
     font-size: 17px;
-    margin: 20px;
-    padding: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 50px;
   }
 }
 

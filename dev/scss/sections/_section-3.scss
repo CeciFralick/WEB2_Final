@@ -12,7 +12,13 @@
         font-family: 'Dosis', sans-serif;
         font-weight: 100;
         color: $mint;
-        padding-bottom: 4px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-style: solid;
+        border-bottom: solid;
+        border-top: none;
+        border-right: none;
+        border-left: none;
 
     }
     #cont {
@@ -101,5 +107,12 @@
 
     @include md {
         font-size: 17px;
+    }
+
+    @include lg{
+        font-size: 17px;
+        margin-left:90px;
+        margin-right:90px;
+        padding: 50px;
     }
 }
