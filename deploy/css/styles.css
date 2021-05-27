@@ -543,6 +543,7 @@ footer > div {
   display: grid;
   grid-area: footer;
   color: #DDAC71;
+  font-size: 12px;
 }
 footer > div #op1,
 footer > div #op2 {
@@ -642,6 +643,7 @@ footer > div #op6 #op6 {
   footer > div {
     display: grid;
     text-align: center;
+    font-size: 16px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px auto;
     grid-template-areas: "me si" "ab co fu ou" "fi";
@@ -708,6 +710,7 @@ footer > div #op6 #op6 {
   footer > div {
     display: grid;
     text-align: center;
+    font-size: 18px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px auto;
     grid-template-areas: "me si" "ab co fu ou" "fi";
@@ -1348,6 +1351,11 @@ Skills
   margin: 10px;
   padding: 20px;
 }
+#did h5 {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 100;
+}
 #did #duk {
   display: grid;
   padding-left: 50px;
@@ -1364,6 +1372,11 @@ Skills
     font-size: 20px;
     padding-left: 100px;
   }
+  #did #duk h5 {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 100;
+  }
 }
 @media (min-width: 1024px) {
   #did #duk {
@@ -1377,6 +1390,11 @@ Skills
   #did #duk h3 {
     font-size: 35px;
     text-align: center;
+  }
+  #did #duk h5 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
   }
 }
 

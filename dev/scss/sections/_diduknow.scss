@@ -11,6 +11,11 @@
     background-color: $mustard;
     margin: 10px;
     padding: 20px;
+    h5{
+        font-size: 13px;
+        text-align: center;
+        font-weight: 100;
+    }
 
 
     #duk {
@@ -27,6 +32,12 @@
         @include md {
             font-size: 20px;
             padding-left: 100px;
+
+            h5{
+                font-size: 17px;
+                text-align: center;
+                font-weight: 100;
+            }
         }
 
         @include lg {
@@ -36,10 +47,14 @@
                 font-size: 65px;
                 text-align: center;
             }
-        
             h3{
                 font-size: 35px;
                 text-align: center;
+            }
+            h5{
+                font-size: 22px;
+                text-align: center;
+                font-weight: 100;
             }
         }
     }
