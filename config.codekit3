@@ -21,6 +21,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/brain\/brain-2062057_1920.png" : {
+      "ft" : 32768,
+      "iS" : 463670,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/brain\/brain-2062057_1920.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/brain\/Brain.png" : {
       "ft" : 32768,
       "iS" : 884685,
@@ -34,6 +47,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/brain\/BrainLG.png" : {
+      "ft" : 32768,
+      "iS" : 884685,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/brain\/BrainLG.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/brain\/BrainMD.png" : {
+      "ft" : 32768,
+      "iS" : 443611,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/brain\/BrainMD.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/brain\/BrainMDD.png" : {
+      "ft" : 32768,
+      "iS" : 447944,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/brain\/BrainMDD.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/brain\/BrainSM.png" : {
       "ft" : 32768,
       "iS" : 264567,
@@ -42,6 +94,19 @@
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/brain\/Group 4.png" : {
+      "ft" : 32768,
+      "iS" : 15407,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/brain\/Group 4.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,

@@ -10,20 +10,44 @@
     padding-top: 20px;
     padding-bottom: 20px;
     grid-column: 10px auto auto auto 10px;
-    background-image: url("../img/brain/BrainSM.png");
+    background-image: url("../img/brain/Brain.png");
+    border-style: solid;
+                border-top: solid;
+                border-bottom: solid;
+                border-right: none;
+                border-left: none;
+                border-color: $mint;
+                border-width: 10px;
     background-repeat: no-repeat;
     padding-top: 30px;
-    background-size:500px;
+    background-size:cover;
     background-position: center;
 
     @include md {
+        background-image: url("../img/brain/BrainMDD.png");
         min-height: 80px;
-        background-size: cover;
+        padding-top: 20px;
+        background-size: 600px;
+        border-style: solid;
+        border-top: solid;
+        border-bottom: solid;
+        border-right: none;
+        border-left: none;
+        border-color: $mint;
+        border-width: 10px;
     }
 
     @include lg {
+        background-image: url("../img/brain/BrainLG.png");
         min-height: 100px;
         background-size: cover;
+        border-style: solid;
+        border-top: solid;
+        border-bottom: solid;
+        border-right: none;
+        border-left: none;
+        border-color: $mint;
+        border-width: 15px;
     }
 
 

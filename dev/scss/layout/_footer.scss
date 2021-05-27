@@ -53,24 +53,54 @@ footer {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
                 grid-area: "ab";
+                border-style: solid;
+                border-top: none;
+                border-bottom: none;
+                border-right: solid;
+                border-left: none;
+                border-color: $mustard;
+                border-width: 10px;
             }
 
             #op4 {
                 grid-column: 2 / 3;
                 grid-row: 2 / 3;
                 grid-area: "co";
+                border-style: solid;
+                border-top: none;
+                border-bottom: none;
+                border-right: solid;
+                border-left: none;
+                border-color: $mustard;
+                border-width: 10px;
+
             }
 
             #op5 {
                 grid-column: 3 / 4;
                 grid-row: 1 / 2;
                 grid-area: "fu";
+                border-style: solid;
+                border-top: none;
+                border-bottom: none;
+                border-right: none;
+                border-left: solid;
+                border-color: $mustard;
+                border-width: 10px;
+
             }
 
             #op6 {
                 grid-column: 2 / 3;
                 grid-row: 2 / 3;
                 grid-area: "ou";
+                border-style: solid;
+                border-top: none;
+                border-bottom: none;
+                border-right: none;
+                border-left: solid;
+                border-color: $mustard;
+                border-width: 10px;
             }
         }
 

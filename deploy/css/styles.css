@@ -585,6 +585,13 @@ footer > div #op6 #op3 {
   grid-column: 1/2;
   grid-row: 1/2;
   grid-area: "ab";
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: solid;
+  border-left: none;
+  border-color: #DDAC71;
+  border-width: 10px;
 }
 footer > div #op3 #op4,
 footer > div #op4 #op4,
@@ -593,6 +600,13 @@ footer > div #op6 #op4 {
   grid-column: 2/3;
   grid-row: 2/3;
   grid-area: "co";
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: solid;
+  border-left: none;
+  border-color: #DDAC71;
+  border-width: 10px;
 }
 footer > div #op3 #op5,
 footer > div #op4 #op5,
@@ -601,6 +615,13 @@ footer > div #op6 #op5 {
   grid-column: 3/4;
   grid-row: 1/2;
   grid-area: "fu";
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: solid;
+  border-color: #DDAC71;
+  border-width: 10px;
 }
 footer > div #op3 #op6,
 footer > div #op4 #op6,
@@ -609,6 +630,13 @@ footer > div #op6 #op6 {
   grid-column: 2/3;
   grid-row: 2/3;
   grid-area: "ou";
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: solid;
+  border-color: #DDAC71;
+  border-width: 10px;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -1191,22 +1219,46 @@ Skills
   padding-top: 20px;
   padding-bottom: 20px;
   grid-column: 10px auto auto auto 10px;
-  background-image: url("../img/brain/BrainSM.png");
+  background-image: url("../img/brain/Brain.png");
+  border-style: solid;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: none;
+  border-left: none;
+  border-color: #81B29B;
+  border-width: 10px;
   background-repeat: no-repeat;
   padding-top: 30px;
-  background-size: 500px;
+  background-size: cover;
   background-position: center;
 }
 @media (min-width: 768px) {
   #brain {
+    background-image: url("../img/brain/BrainMDD.png");
     min-height: 80px;
-    background-size: cover;
+    padding-top: 20px;
+    background-size: 600px;
+    border-style: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: none;
+    border-left: none;
+    border-color: #81B29B;
+    border-width: 10px;
   }
 }
 @media (min-width: 1024px) {
   #brain {
+    background-image: url("../img/brain/BrainLG.png");
     min-height: 100px;
     background-size: cover;
+    border-style: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: none;
+    border-left: none;
+    border-color: #81B29B;
+    border-width: 15px;
   }
 }
 #brain #arrows {
