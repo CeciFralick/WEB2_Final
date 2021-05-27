@@ -1257,13 +1257,7 @@ Skills
     min-height: 80px;
     padding-top: 20px;
     background-size: 600px;
-    border-style: solid;
-    border-top: solid;
-    border-bottom: solid;
-    border-right: none;
-    border-left: none;
-    border-color: #81B29B;
-    border-width: 10px;
+    border: 10px solid #81B29B;
   }
 }
 @media (min-width: 1024px) {

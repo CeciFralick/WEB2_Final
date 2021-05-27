@@ -12,15 +12,15 @@
     grid-column: 10px auto auto auto 10px;
     background-image: url("../img/brain/Brain.png");
     border-style: solid;
-                border-top: solid;
-                border-bottom: solid;
-                border-right: none;
-                border-left: none;
-                border-color: $mint;
-                border-width: 10px;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: none;
+    border-left: none;
+    border-color: $mint;
+    border-width: 10px;
     background-repeat: no-repeat;
     padding-top: 30px;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
 
     @include md {
@@ -28,13 +28,7 @@
         min-height: 80px;
         padding-top: 20px;
         background-size: 600px;
-        border-style: solid;
-        border-top: solid;
-        border-bottom: solid;
-        border-right: none;
-        border-left: none;
-        border-color: $mint;
-        border-width: 10px;
+        border: 10px solid $mint;
     }
 
     @include lg {
@@ -87,7 +81,7 @@
             border-right: none;
             border-left: none;
             border-width: 1px;
-            padding-bottom: 5px;        
+            padding-bottom: 5px;
             font-family: 'Dosis', sans-serif;
             font-weight: 40px;
             padding-bottom: 5px;
@@ -103,6 +97,7 @@
             @include md {
                 line-height: 15px;
             }
+
             @include lg {
                 line-height: 20px;
             }
