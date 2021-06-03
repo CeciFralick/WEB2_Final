@@ -361,14 +361,6 @@ body {
   background-color: #3d4058;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-ul li {
-  list-style: none;
-}
-
 .hidden {
   display: none;
 }
@@ -380,31 +372,6 @@ ul li {
 p {
   font-family: "Montserrat", sans-serif;
   line-height: 22px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.left {
-  display: block;
-  margin-left: 50%;
-  margin-right: auto;
-  width: 15%;
-}
-
-button {
-  background-color: #17a8b3;
-  border: none;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
 
 ul {
@@ -525,6 +492,7 @@ header #background #nav-container {
   grid-area: nav;
   padding: 20px 30px 20px 30px;
   font-size: 16px;
+  font-weight: 30;
 }
 header #background #nav-container a {
   color: #DDAC71;

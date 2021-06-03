@@ -2,70 +2,73 @@
     Natalia
 ============= */
 
-#nat{
-    h1{
+#nat {
+    h1 {
         color: $mint;
         padding-top: 10px;
         line-height: 20px;
     }
-#natalia {
-    display: grid;
-    color: $darkmidnight;
-    grid-template-columns: 3;
-    background-color: $mint;
-    font-size: 12px;
-    border-style: solid;
-    border-top: none;
-    border-bottom: none;
-    border-right: solid;
-    border-left: solid;
-    border-color: $evergreen;
-    border-width: 60px;
-    padding: 20px;
 
-    #NatText {
-        display: none;
-    }
-
-    @include md {
+    #natalia {
+        display: grid;
+        color: $darkmidnight;
+        grid-template-columns: 3;
+        background-color: $mint;
+        font-size: 12px;
         border-style: solid;
         border-top: none;
-        font-size: 16px;
         border-bottom: none;
         border-right: solid;
         border-left: solid;
         border-color: $evergreen;
-        border-width: 35px;
+        border-width: 60px;
         padding: 20px;
+
         #NatText {
-            display: grid;
-            padding: 30px;
-            padding-right: 50px;
-            grid-column: 2 / 3;
+            display: none;
+        }
+
+        @include md {
+            border-style: solid;
+            border-top: none;
+            font-size: 16px;
+            border-bottom: none;
+            border-right: solid;
+            border-left: solid;
+            border-color: $evergreen;
+            border-width: 35px;
+            padding: 20px;
+
+            #NatText {
+                display: grid;
+                padding: 30px;
+                padding-right: 50px;
+                grid-column: 2 / 3;
+            }
+        }
+
+        @include lg {
+            border-style: solid;
+            border-top: none;
+            font-size: 18px;
+            border-bottom: none;
+            border-right: solid;
+            border-left: solid;
+            border-color: $evergreen;
+            border-width: 55px;
+            padding: 20px;
+
+            #NatText {
+                display: grid;
+                padding: 30px;
+                padding-right: 50px;
+                grid-column: 2 / 3;
+            }
+        }
+
+
+        img {
+            width: 100%;
         }
     }
-
-    @include lg {
-        border-style: solid;
-        border-top: none;
-        font-size: 18px;
-        border-bottom: none;
-        border-right: solid;
-        border-left: solid;
-        border-color: $evergreen;
-        border-width: 55px;
-        padding: 20px;
-        #NatText {
-            display: grid;
-            padding: 30px;
-            padding-right: 50px;
-            grid-column: 2 / 3;
-        }
-    }
-
-
-    img {
-        width: 100%;
-    }
-}
 }
