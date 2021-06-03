@@ -20,7 +20,7 @@ header {
     }
   }
 
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   #background {
     align-items: flex-end;
@@ -43,11 +43,16 @@ header {
         padding-top: 5px;
         padding-bottom: 5px;
       }
+
+      h2 {
+        padding: 2px;
+        line-height: 25px;
+      }
     }
 
     display: grid;
     grid-gap: 3px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
     >div {
       display: grid;
@@ -67,7 +72,7 @@ header {
 
     #nav-container {
       grid-area: nav;
-      padding: 20px 10px 20px;
+      padding: 20px 30px 20px 30px;
       font-size: 16px;
 
       a {
@@ -82,13 +87,13 @@ header {
 
       @include md {
         display: block !important;
-        padding: 10px 30px 10px;
+        padding: 30px 30px 30px 30px;
         font-size: 18px;
       }
 
       @include lg {
         display: block !important;
-        padding: 40px 30px 40px;
+        padding: 50px 50px 50px 40px;
         font-size: 20px;
       }
     }
